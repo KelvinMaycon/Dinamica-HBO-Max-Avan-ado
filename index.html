@@ -12,6 +12,8 @@
             background-color: rgb(20, 20, 20);
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
         }
         nav{
             display: flex;           
@@ -37,8 +39,7 @@
         }
                     /* Estilização do cabeçalho */
         section{
-            display: flex;
-            flex-direction: column;
+            
             align-items: center;
             text-align: center;
             margin-top: 140px;
@@ -63,8 +64,61 @@
             margin-top: 90px;            
             color: #FFFFFF;
         }
-                /* Estilização da seção */
-       
+                    /* Estilização da seção */
+       form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        
+
+       }
+       form input{
+        width: 566px;
+        height: 53px;
+        border-radius: 25px;
+        border: none;      
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 33px;
+        padding-left: 50px;
+        background: rgba(127, 127, 127, 0.75);     
+        
+        
+       }
+       form input::placeholder{
+        color: #FFFFFF;
+       }
+
+       form label{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 33px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-right: 25%;
+        
+        
+       }
+       form button{
+        margin-top: 50px;
+        width: 215px;
+        height: 55px;;
+        background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;    
+       }
+                    /* Estilização do formulário */
             
         
         
@@ -94,10 +148,10 @@
     </section>
 
     <form>
-        <label>Email</label>
-        <input type="email">
+        <label>E-mail</label>
+        <input type="email" placeholder="email@dnc.group">
         <label>Senha</label>
-        <input type="password">
+        <input type="password" placeholder="*******">
         <button type="submit">Entrar</button>
 
     </form>
