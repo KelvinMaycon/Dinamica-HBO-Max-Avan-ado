@@ -14,37 +14,97 @@
             background-size: cover;
         }
         nav{
-            display: flex;
-            justify-content: space-around;
+            display: flex;           
             margin-top: 30px;
+            justify-content: space-around
         }
+        .imageCenter{
+            margin-left: 430px;
+        }
+        .login a{
+            font-family: 'Inter';
+            font-style: normal;
+            text-decoration: none;
+            font-size: 29px;
+            line-height: 35px;
+            color: white;
+            margin-left: 140px;          
+            justify-items: center;
+
+        } 
+        .login a:hover{
+            color: #CCCCCC;
+        }
+                    /* Estilização do cabeçalho */
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 140px;
+        }
+
+        .entry a{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 54px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        .entry a:hover{
+            color:#CCCCCC;
+        }
+        .entry h2{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 29px;
+            margin-top: 90px;            
+            color: #FFFFFF;
+        }
+                /* Estilização da seção */
+       
+            
+        
         
     </style>
 </head>
 <body>
     <nav>
         <div class="imageLeft">
-            <img src="Assets/Images/lupa.png">
+            <a href=""><img src="Assets/Images/lupa.png"></a>
         </div>
         <div class="imageCenter">
             <img src="Assets/Images/hbo.png">
         </div>
         <div class="login">
             <a href="">Assinar</a>
-            <a href="">Entrar</a>
+            <a href="" id="loginRight">Entrar</a>
         </div>
 
     </nav>
 
     <section>
+        <div class="entry">
+            <h1><a href="">Entrar</a></h1>
+            <h2>Você tem uma conta HBO Max?</h2>
+        </div>
         
     </section>
 
     <form>
+        <label>Email</label>
+        <input type="email">
+        <label>Senha</label>
+        <input type="password">
+        <button type="submit">Entrar</button>
 
     </form>
 
     <footer>
+        <h2>Você acessa a HBO Max por um provedor de TV, de internet ou celular?</h2>
+        <button type="submit">Entrar como provedor</button>
 
     </footer>   
 </body>
